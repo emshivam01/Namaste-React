@@ -1,37 +1,32 @@
-<<<<<<< HEAD
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
-const Title = () => {
+const Header = () => {
   return (
-    <div className="border-2 border-gray-700">
-      <h1 id="heading" className="text-2xl text-white">
-        Title
-      </h1>
+    <div className="header">
+      <div>
+        <img
+          className="logo-icon"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoHNu4eg-P-MW8pZslFu3qwApTSrPdznlRQ&usqp=CAU"
+          alt="React Logo"
+        />
+      </div>
+      <div className="search-bar">
+        <input type="text" />
+        <button className="search-btn">Search</button>
+      </div>
+      <div>
+        <img
+          className="user-icon"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqNIOff5AuP0YdnbId7smDM0mrE4_Etc-_dA&usqp=CAU"
+          alt="User icon"
+        />
+      </div>
     </div>
   );
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<Title />);
-=======
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-
-const Title = () => {
-  return (
-    <div className="border-2 border-gray-700">
-      <h1 id="heading" className="text-2xl text-white">
-        Title
-      </h1>
-    </div>
-  );
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<Title />);
->>>>>>> 904e9dc (chapter-03 laying the foundation)
+root.render(<Header />);
